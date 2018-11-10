@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const routeConfig = requier("./config/route-config.js");
+const routeConfig = require("./config/route-config.js");
 
 routeConfig.init(app);
 
