@@ -20,8 +20,11 @@
   "production": {
     "username": "postgres",
     "password": null,
-    "database": "database_production",
+    "database": "postgres",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "logging": false,
+    "operatorsAliases": false,
+    "use_env_variable": "DATABASE_URL"
   }
 }
