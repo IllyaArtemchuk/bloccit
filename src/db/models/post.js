@@ -7,10 +7,10 @@ module.exports = (sequelize, DataTypes) => {
     body: {
       type: DataTypes.STRING,
       allowNull: false},
-    topicId: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    }
+      topicId: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+      }
   }, {});
   Post.associate = function(models) {
     Post.belongsTo(models.Topic, {

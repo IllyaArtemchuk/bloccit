@@ -17,7 +17,6 @@ describe ("Post", ()=> {
                 Post.create({
                     title: "My first visit to Proxima Centauri b",
                     body: "I saw some rocks.",
-
                     topicId: this.topic.id
                 })
                 .then((post)=> {
