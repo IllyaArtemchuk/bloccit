@@ -36,12 +36,12 @@ describe("routes : posts", ()=> {
     })
 
     describe("GET /topics/:topicId/posts/new", ()=> {
-        it("should render a new post form", (done)=> {
-            request.get(`${base}${this.topic.id}/posts/new`, (err, body, res)=> {
-                expect(err).toBeNull();
-                expect(body).toContain("New Post");
-                done();
-            })
-        })
+        it("should render a new post form", (done) => {
+            request.get(`${base}${this.topic.id}/posts/new`, (err, res, body) => {
+              expect(err).toBeNull();
+              expect(body).toContain("New Post");
+              done();
+            });
+          });
     })
 })
